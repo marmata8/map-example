@@ -17,7 +17,7 @@ function addPolygonToMap(map) {
   map.addObject(
     new H.map.Polygon(lineString, {
       style: {
-        //fillColor: '#FFFFCC',
+        fillColor: 'rgba(102,204,204,0.3)',
         strokeColor: '#829',
         lineWidth: 2
       }
@@ -40,7 +40,7 @@ var defaultLayers = platform.createDefaultLayers();
 var map = new H.Map(document.getElementById('map'),
   defaultLayers.vector.normal.map,{
   center: {lat:43.65, lng:-79.38},
-  zoom: 8,
+  zoom: 11,
   pixelRatio: window.devicePixelRatio || 1
 });
 // add a resize listener to make sure that the map occupies the whole container
