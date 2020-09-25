@@ -4,7 +4,8 @@
  * @param  {H.Map} map      A HERE Map instance within the application
  */
 function moveMapToBerlin(map){
-  map.setCenter({lat:52.5159, lng:13.3777});
+  //map.setCenter({lat:52.5159, lng:13.3777});
+  map.setCenter({lat:43.656204100, lng:-79.380440700});
   map.setZoom(14);
 }
 
