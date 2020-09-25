@@ -17,9 +17,9 @@ function addPolygonToMap(map) {
   map.addObject(
     new H.map.Polygon(lineString, {
       style: {
-        fillColor: '#FFFFCC',
+        //fillColor: '#FFFFCC',
         strokeColor: '#829',
-        lineWidth: 8
+        lineWidth: 2
       }
     })
   );
@@ -39,8 +39,8 @@ var defaultLayers = platform.createDefaultLayers();
 //Step 2: initialize a map - this map is centered over Europe
 var map = new H.Map(document.getElementById('map'),
   defaultLayers.vector.normal.map,{
-  center: {lat:52, lng:5},
-  zoom: 5,
+  center: {lat:43.65, lng:-79.38},
+  zoom: 8,
   pixelRatio: window.devicePixelRatio || 1
 });
 // add a resize listener to make sure that the map occupies the whole container
