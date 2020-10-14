@@ -14,7 +14,7 @@
     <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
     <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
     <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-clustering.js"></script>
-    <script type="text/javascript" src="./data/codes.js"></script>
+    <script type="text/javascript" src="./data/GTA.js"></script>
   </head>
   <body id="markers-on-the-map">
 
@@ -23,7 +23,8 @@
         <p>Cluster multiple markers together to better visualize the data</p>
     </div>
     <p>This example displays a map showing the distribution of 
-        postal codes.</p>
+        postal codes. (For GTA, approx. 50,000)</p>
+    <p>The current zoom level is: <span id="zoom-level"></span></p>
     <div id="map"></div>
     <h3>Code</h3>
     <p>Marker clustering requires the presence of the <code>mapsjs-clustering</code> module of the API. 
